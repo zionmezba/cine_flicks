@@ -1,4 +1,5 @@
 import React from "react";
+import UnavailablePoster from './not_available.jpg';
 
 const MovieCard = ({ movie }) => {
     return (
@@ -8,7 +9,7 @@ const MovieCard = ({ movie }) => {
             </div>
             <div>
                 <img
-                    src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/400'}
+                    src={movie.Poster !== 'N/A' ? movie.Poster : UnavailablePoster}
                     alt={movie.Title} />
             </div>
 
